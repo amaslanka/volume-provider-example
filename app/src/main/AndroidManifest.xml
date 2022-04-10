@@ -25,6 +25,16 @@
         <service android:name=".MediaService"
             android:exported="false" />
 
+        <service
+            android:name=".SampleMediaRouteProviderService"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:process=":mrp">
+            <intent-filter>
+                <action android:name="android.media.MediaRouteProviderService" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
