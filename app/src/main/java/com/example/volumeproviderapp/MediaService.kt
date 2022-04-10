@@ -93,6 +93,7 @@ class MediaService : Service() {
                 )
 
                 volumeProvider = VolumeProvider(
+                    context = applicationContext,
                     currentVolume = getStreamCurrentVolume(),
                     maxVolume = getStreamMaxVolume(),
                 )
